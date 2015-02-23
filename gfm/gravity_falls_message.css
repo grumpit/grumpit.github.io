@@ -1,0 +1,101 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.2em;
+}
+
+.main-content {
+  display: block;
+  position: relative;
+}
+
+#gf-message-widget {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding: .5em;
+}
+
+#gf-message-widget a {
+  display: block;
+  text-decoration: none;
+}
+
+#gf-message-widget a:link {
+  color: #000;
+}
+
+#gf-message-widget a:hover {
+  color: #666;
+}
+
+#gf-message-widget a:visited {
+  color: #000;
+}
+
+@font-face {
+  font-family: authorCipher;
+  src: url(CipherFontA.ttf);
+}
+
+@font-face {
+  font-family: billCipher;
+  src: url(CipherFontB.ttf);
+}
+
+#gf-message-widget .cipher {
+  position: relative;
+  margin-bottom: .5em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+}
+
+#gf-message-widget .letters article,
+#gf-message-widget .letters article {
+  display: inline-block;
+  font-size: 1.8em;
+  margin-right: .2em;
+}
+
+#gf-message-widget section#author-cipher .letters article.letter {
+  font-family: authorCipher;
+}
+
+#gf-message-widget .letters article.letter a {
+  padding-top: .15em;
+}
+
+#gf-message-widget .letters article.space,
+#gf-message-widget .letters article.delete {
+  border: 1px solid #ccc;
+  font-size: 1.2em;
+  padding-top: .2em;
+}
+
+#gf-message-widget .letters article.delete {
+  margin: 0;
+}
+
+#gf-message-widget .letters article.space a,
+#gf-message-widget .letters article.delete a {
+  display: inline;
+  vertical-align: .15em;
+  padding: .2em .5em;
+}
+
+#gf-message-widget .letters {
+  margin-bottom: .2em;
+}
+
+#gf-message-widget section#bill-cipher .letters article.letter {
+  font-family: billCipher;
+}
+
+#gf-message-widget .answer {
+  min-height: 1.4em;
+  width: 65%;
+  margin: 0 auto;
+  text-align: left;
+}
+
